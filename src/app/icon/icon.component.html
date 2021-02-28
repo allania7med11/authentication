@@ -1,1 +1,6 @@
-<p>icon works!</p>
+<span [ngSwitch]="name" class="font-bold  m-2 text-gray-400">
+    <span *ngSwitchCase="'mail'"><app-mail></app-mail></span>
+    <span *ngSwitchCase="'lock-closed'"><app-lock-closed></app-lock-closed></span>
+    <span *ngSwitchCase="'user'"><app-user></app-user></span>
+    <span *ngSwitchDefault>?</span>
+</span>
